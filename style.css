@@ -52,6 +52,12 @@ body{
   .quote-text{
     font-size: 2.5rem;
   }
+  .popup-content{
+    margin: auto 10px;
+  }
+  .popup-text{
+    font-size: 2rem;
+  }
 }
 
 .button-container{
@@ -87,4 +93,28 @@ button:active{
 
 .fa-twitter{
   font-size: 1.5rem;
+}
+
+.dialog-style{
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+}
+
+.fa-x{
+  font-size: 2rem;
+  position: absolute;
+  right: 10px;
+}
+
+.fa-exclamation-triangle{
+  margin-bottom: 20px;
+  color: green;
+  font-size: 3rem;
+}
+
+.popup-text{
+  font-size: 1.75rem;
+  margin-bottom: 20px;
 }

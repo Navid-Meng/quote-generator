@@ -1,10 +1,18 @@
-
-
 const quoteContainer = document.getElementById('quote-container');
 const quoteText = document.getElementById('quote');
 const authorText = document.getElementById('author');
 const newQuoteBtn = document.getElementById('new-quote');
+const modal = document.getElementById('myDialog')
+const openModal = document.querySelector('#messenger')
+const closeModal = document.querySelector('#close')
 
+openModal.addEventListener('click', () => {
+    modal.show()
+})
+
+closeModal.addEventListener('click', () => {
+    modal.close()
+})
 
 var apiQuote = '';
 
