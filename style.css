@@ -55,6 +55,10 @@ body{
   .quote-text{
     font-size: 1.5rem;
   }
+  .long-quote{
+    font-size: 1.4rem;
+  }
+
   .popup-content{
     margin: auto 10px;
   }
