@@ -49,8 +49,11 @@ body{
   .quote-container{
     margin: auto 10px;
   }
+  .fa-quote-left{
+    font-size: 2rem;
+  }
   .quote-text{
-    font-size: 1.75rem;
+    font-size: 1.5rem;
   }
   .popup-content{
     margin: auto 10px;
@@ -95,17 +98,15 @@ button:active{
   font-size: 1.5rem;
 }
 
+dialog{
+  border-radius: 10px;
+}
+
 .dialog-style{
   border-radius: 10px;
   display: flex;
   flex-direction: column;
   width: 300px;
-}
-
-.fa-x{
-  font-size: 2rem;
-  position: absolute;
-  right: 10px;
 }
 
 .fa-exclamation-triangle{
@@ -115,6 +116,6 @@ button:active{
 }
 
 .popup-text{
-  font-size: 1.75rem;
+  font-size: 1.5rem;
   margin-bottom: 20px;
 }

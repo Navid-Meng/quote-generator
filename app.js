@@ -3,7 +3,7 @@ const quoteText = document.getElementById('quote');
 const authorText = document.getElementById('author');
 const newQuoteBtn = document.getElementById('new-quote');
 const modal = document.getElementById('myDialog')
-const openModal = document.querySelector('#messenger')
+const openModal = document.querySelector('#messenger-button')
 const closeModal = document.querySelector('#close')
 
 openModal.addEventListener('click', () => {
