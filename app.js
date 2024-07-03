@@ -17,22 +17,23 @@ closeModal.addEventListener('click', () => {
 var apiQuote = '';
 
 function newQuote(){
-    if (apiQuote['author'] == null){
+    if (apiQuote['category'] == null){
         authorText.textContent = 'Unknown';
     } else {
-        authorText.textContent = apiQuote['author'];
+        authorText.textContent = apiQuote['category'];
     }
 
-    if (apiQuote['content'].length > 100){
+    if (apiQuote['joke'].length > 100){
         quoteText.classList.add('long-quote');
     } else {
         quoteText.classList.remove('long-quote');
     }
-    quoteText.textContent = apiQuote['content'];
+    quoteText.textContent = apiQuote['joke'];
 }
 
 async function getQuotes(){
-    const apiUrl = 'https://api.quotable.io/random';
+    // const apiUrl = 'https://api.quotable.io/random';
+    const apiUrl = 'https://v2.jokeapi.dev/joke/Any?type=single';
     try{
         const response = await fetch(apiUrl);
         apiQuote = await response.json();
